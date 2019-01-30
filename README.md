@@ -9,7 +9,7 @@ Although you may think I want to become a developer (and the first items on the 
 ## Main Schedule
 
 | Month         | Objective |
-|---------------|-----------|
+| ------------- | --------- |
 | February 2019 | Course [Object Oriented Programming in Java](https://www.udacity.com/course/object-oriented-programming-in-java--ud283) |
 | March 2019    | TBD       |
 
