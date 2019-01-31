@@ -2,8 +2,8 @@ import java.io.Console;
 
 public class ContactsManager {
 
-    Contact [] myContacts;
-    int numberOfContacts;
+    private Contact [] myContacts;
+    private int numberOfContacts;
 
     public ContactsManager() {
         this.myContacts = new Contact[500];
@@ -15,7 +15,7 @@ public class ContactsManager {
         this.myContacts[numberOfContacts] = newContact;
         this.numberOfContacts++;
 
-        System.out.println("Contact added: " + newContact.name + " | " + newContact.phoneNumber);
+        System.out.println("Contact added: " + newContact.getName() + " | " + newContact.getPhoneNumber());
     }
 
     public Contact searchContact(String searchString) {
@@ -26,8 +26,8 @@ public class ContactsManager {
         }
         // Actually search for the contact and return if found.
         for (int i=0;i<this.numberOfContacts;i++) {
-            if (myContacts[i].name.equals(searchString)) {
-                System.out.println("Found " + myContacts[i].name + ". Returning to caller function.");
+            if (myContacts[i].getName().equals(searchString)) {
+                System.out.println("Found " + myContacts[i].getName()+ ". Returning to caller function.");
                 return myContacts[i];
             }
         }
