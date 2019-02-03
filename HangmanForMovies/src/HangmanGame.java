@@ -1,19 +1,33 @@
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Scanner;
 
 public class HangmanGame {
 
 
-    private static final String PLAY_MODE = "CommandLine";
+    private static final int MISTAKES_ALLOWED = 10;
+    private static final String PLAYMODE_COMMANDLINE = "CommandLine";
+    // TODO other play modes (?)
+
+    private String playMode;
+
+    public String getPlayMode() {
+        return playMode;
+    }
+
+    public void setPlayMode(String playMode) {
+        this.playMode = playMode;
+    }
+
     //TODO What about array lists?
     private String secretValue;
     private String [] secretValueMask;
 
     private boolean isFinished;
     private int mistakes;
-    private static final int mistakesAllowed = 10;
     private boolean victory;
 
-    public HangmanGame(String secretValue) {
+    public HangmanGame(@NotNull String secretValue) {
         this.secretValue = secretValue;
         this.secretValueMask = new String[secretValue.length()];
         for (int i = 0; i < secretValue.length(); i++) {
@@ -24,18 +38,18 @@ public class HangmanGame {
         }
         this.isFinished = false;
         this.mistakes = 0;
+        this.playMode = PLAYMODE_COMMANDLINE;
     }
 
     public void play() {
-        if (mistakes >= mistakesAllowed) {
+        if (mistakes >= MISTAKES_ALLOWED) {
             printCurrentMask();
             this.isFinished = true;
             this.victory = false;
             System.out.println("\n\nYou LOST by making 10 mistakes. Try again.");
             return;
         } else {
-            if (this.PLAY_MODE.equals("CommandLine")) {
-                System.out.println("");
+            if (this.playMode.equals(PLAYMODE_COMMANDLINE)) {
                 printCurrentMask();
                 System.out.print("\nType a letter: ");
                 evaluateUserGuess();
@@ -46,10 +60,9 @@ public class HangmanGame {
 
     private void evaluateVictory() {
         for (String letter : this.secretValueMask) {
-            if (letter.indexOf("_") >= 0)
+            if (letter.contains("_"))
                 return;
         }
-
         printCurrentMask();
         this.isFinished = true;
         this.victory = true;
@@ -74,6 +87,7 @@ public class HangmanGame {
     }
 
     private void printCurrentMask() {
+        System.out.println();
         System.out.println("You've made " + this.mistakes + " mistake(s).");
         for (int i = 0; i < this.secretValue.length(); i++) {
                 System.out.print(this.secretValueMask[i]);
