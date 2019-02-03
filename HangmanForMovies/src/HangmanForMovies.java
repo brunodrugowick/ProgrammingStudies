@@ -1,60 +1,41 @@
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
 
 public class HangmanForMovies {
+
     public static void main (String [] args) {
 
-        String [] movies;
+        //System.out.print("Welcome! This is a classic Hangman game. I'll choose a movie and you'll have to guess which one it's.");
 
-        System.out.println("Initializing application.");
-        movies = getMovies(getNumberOfMovies());
+        System.out.println("Initializing game...");
 
-        HangmanGame game = new HangmanGame(movies);
-        game.startGame();
-
-    }
-
-    private static String[] getMovies(int numberOfMovies) {
-        // Read file
-        Scanner scanner;
-        File movieList = new File("files/movieList.txt");
-        String [] movies = new String[numberOfMovies];
-
-        try {
-            scanner = new Scanner(movieList);
-
-            int arrayPosition = 0;
-            while(scanner.hasNextLine()) {
-                movies[arrayPosition] = scanner.nextLine();
-                arrayPosition++;
+        System.out.println("    getting movies list.");
+        MoviesList moviesList = null;
+        if (args.length != 0) {
+            try {
+                moviesList = new MoviesList(args[0]);
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+                System.out.println("Could not use/find the specified file.");
             }
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         }
-        return movies;
-    }
-
-    private static int getNumberOfMovies() {
-        // Read file
-        Scanner scanner;
-        File movieList = new File("files/movieList.txt");
-
-        int countMovies = 0;
-        try {
-            scanner = new Scanner(movieList);
-
-            // Get basic info about the file
-            while(scanner.hasNextLine()) {
-                scanner.nextLine();
-                countMovies++;
+        else {
+            try {
+                moviesList = new MoviesList();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+                System.out.println("Could not use/find the default file. Check your installation.");
             }
-            System.out.println("I have a list of " + countMovies + " movies.");
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         }
-        return countMovies;
+        //System.out.println(moviesList.toString());
+
+        System.out.println("    randomly selecting one for you to guess.");
+        String movie = moviesList.getRandomMovie();
+
+        System.out.println("\nOk. I'm done! Let's start, shall we?");
+        HangmanGame hangmanGame = new HangmanGame(movie);
+
+        while (!hangmanGame.isFinished()){
+            hangmanGame.play();
+        }
     }
 }
