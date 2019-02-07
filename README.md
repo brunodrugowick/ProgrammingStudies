@@ -10,6 +10,7 @@ Although you may think I want to become a developer (and the first items on the 
 | ------------- | --------- |
 | February 2019 | Course [Object Oriented Programming in Java](https://www.udacity.com/course/object-oriented-programming-in-java--ud283) |
 | March 2019    | Course [Spring Framework 5 - Beginner to Guru](https://www.udemy.com/spring-framework-5-beginner-to-guru/learn/v4/overview) |
+| April 2019    | Design Patterns - I have a book for that. Going to link here soon. |
 
 ## Main Objective
 
