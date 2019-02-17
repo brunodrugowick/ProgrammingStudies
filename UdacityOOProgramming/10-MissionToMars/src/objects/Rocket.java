@@ -1,11 +1,30 @@
 package objects;
 
+import java.util.ArrayList;
+
 /**
  * A rocket.
  *
  * @author Bruno Drugowick Muniz
  */
 public class Rocket implements SpaceShip {
+
+    private int weight;
+    private int max_weight;
+    public ArrayList<Item> items;
+
+    public int getCost() {
+        return cost;
+    }
+
+    private int cost;
+
+    public Rocket(int weight, int max_weight, int cost) {
+        this.weight = weight;
+        this.max_weight = max_weight;
+        this.items = new ArrayList<>();
+        this.cost = cost;
+    }
 
     /**
      * A method that launches the rocket with its cargo.
@@ -17,7 +36,7 @@ public class Rocket implements SpaceShip {
      */
     @Override
     public boolean launch() {
-        return true;
+        return Math.random() < 0.5;
     }
 
     /**
@@ -29,7 +48,7 @@ public class Rocket implements SpaceShip {
      */
     @Override
     public boolean land() {
-        return true;
+        return Math.random() < 0.5;
     }
 
     /**
@@ -42,8 +61,9 @@ public class Rocket implements SpaceShip {
      * false if it will exceed the weight limit
      */
     @Override
-    public boolean canCarrry(Item item) {
-        // TODO implement the method
+    public boolean canCarry(Item item) {
+        if (this.weight + item.getWeight() <= this.max_weight)
+            return true;
         return false;
     }
 
@@ -55,6 +75,17 @@ public class Rocket implements SpaceShip {
      */
     @Override
     public void carry(Item item) {
-        // TODO implement the method
+        this.weight += item.getWeight();
+        this.items.add(item);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder specs = new StringBuilder();
+        specs.append("Max weight: " + this.max_weight);
+        specs.append(" Current weight: " + this.weight);
+        specs.append(" Items: " + this.items);
+
+        return specs.toString();
     }
 }

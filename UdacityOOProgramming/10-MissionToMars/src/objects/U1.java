@@ -14,6 +14,14 @@ public class U1 extends Rocket {
             "Chance of launch explosion = 5% * (cargo carried / cargo limit)\n" +
             "Chance of landing crash = 1% * (cargo carried / cargo limit)";
 
+    private static final int cost = 100;
+    private static final int u1Weight = 10000;
+    private static final int u1MaxWeight = 18000;
+
+    public U1() {
+        super(u1Weight, u1MaxWeight, cost);
+    }
+
     /**
      * A method that launches the rocket with its cargo.
      * Given the cargo and a probability, the rocket may
@@ -39,10 +47,5 @@ public class U1 extends Rocket {
     public boolean land() {
         // TODO implement the method
         return super.land();
-    }
-
-    @Override
-    public String toString() {
-        return this.ROCKET_SPECS;
     }
 }

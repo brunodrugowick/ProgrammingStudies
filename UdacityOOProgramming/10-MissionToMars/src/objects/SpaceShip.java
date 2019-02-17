@@ -36,7 +36,7 @@ public interface SpaceShip {
      * @return true if the rocket can carry such item or
      * false if it will exceed the weight limit
      */
-    boolean canCarrry(Item item);
+    boolean canCarry(Item item);
 
     /**
      * A method that loads an objects.Item on the Spaceship,
