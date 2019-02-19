@@ -1,8 +1,6 @@
 # 2019EducationManagement
 
-This is a repository to manage my studies on the **year of 2019**. The main objective here is to become an attractive professional for the *software development industry*. 
-
-Although you may think I want to become a developer (and the first items on the study list may trick you into that) that's not the case. I want to become a **development-capable Technology Coordinator**.
+This is a repository to manage my studies on the **year of 2019**. The main objective here is to pump it up ([don't you know?](https://www.youtube.com/watch?v=0HtyF0jux2Q)) my development skills.
 
 ## Main Schedule
 
@@ -20,19 +18,24 @@ To become a development-capable Technology Coordinator.
 
 According to **myself**, **I** should/want be::
 * Well versed on a solid programming language: Java.
+* Versed/aware of the most common frameworks in 2019.
+  * [Spring Framework](https://www.udemy.com/spring-framework-5-beginner-to-guru/learn/v4/overview).
 * Well versed on OO [Design Patterns](https://www.amazon.com.br/dp/0201633612/ref=pe_2740240_232748480_TE_item).
 * Aware of the importance of the following soft skills:
   * Team Work
   * Empathy
-  * More TBD.
-* More TBD
+  * ...
 
 ## Specific Studies
 
-### Java
+### OO with Java
 
 * Course [Object Oriented Programming in Java](https://www.udacity.com/course/object-oriented-programming-in-java--ud283)
-* More TBD
+* Duration: 15~20 days.
+
+### Spring Framework 5
+
+* Course [Spring Framework 5 - Beginner to Guru](https://www.udemy.com/spring-framework-5-beginner-to-guru/learn/v4/overview)
 
 ### Design Patterns
 
