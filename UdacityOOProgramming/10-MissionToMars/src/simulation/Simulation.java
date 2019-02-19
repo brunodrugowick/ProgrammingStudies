@@ -123,13 +123,14 @@ public class Simulation {
         return u2Rockets;
     }
 
+    // TODO loadU1 and loadU2 are basically the same. Should refactor later to remove repeated code.
+
     /**
      * Runs the simulation for the provided loaded rockets.
      * @param rockets a fleet of rockets on an ArrayList.
      * @return a float indicating the total cost for the simulation
      */
     public float runSimulation(ArrayList<Rocket> rockets) {
-        // TODO implement method according to specification.
         float budget = 0;
         int crashes = 0;
 
