@@ -44,6 +44,6 @@ public interface SpaceShip {
      *
      * @param item The item to be loaded on the Spaceship.
      */
-    void carry(Item item);
+    boolean carry(Item item);
 
 }

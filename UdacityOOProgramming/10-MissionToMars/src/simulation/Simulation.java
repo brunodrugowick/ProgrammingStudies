@@ -76,7 +76,6 @@ public class Simulation {
             for (Item item : carryingItems)
                 this_items.remove(item);
             u1Rockets.add(currentRocket);
-            System.out.println("    " + currentRocket);
         }
 
         return u1Rockets;
@@ -119,7 +118,6 @@ public class Simulation {
             for (Item item : carryingItems)
                 this_items.remove(item);
             u2Rockets.add(currentRocket);
-            System.out.println("    " + currentRocket);
         }
 
         return u2Rockets;
@@ -142,7 +140,6 @@ public class Simulation {
             }
             budget += rocket.getCost();
         }
-        System.out.println("Crashes: " + crashes);
         return budget;
     }
 

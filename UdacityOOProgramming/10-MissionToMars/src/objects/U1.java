@@ -1,5 +1,7 @@
 package objects;
 
+import java.util.Random;
+
 /**
  * A U1-type Rocket.
  *
@@ -14,12 +16,8 @@ public class U1 extends Rocket {
             "Chance of launch explosion = 5% * (cargo carried / cargo limit)\n" +
             "Chance of landing crash = 1% * (cargo carried / cargo limit)";
 
-    private static final int cost = 100;
-    private static final int u1Weight = 10000;
-    private static final int u1MaxWeight = 18000;
-
     public U1() {
-        super(u1Weight, u1MaxWeight, cost);
+        super(10000, 18000, 100000000);
     }
 
     /**
@@ -27,25 +25,33 @@ public class U1 extends Rocket {
      * Given the cargo and a probability, the rocket may
      * crash.
      *
+     * Chance of launch explosion = 5% * (cargo carried / cargo limit)
+     *
      * @return true on a successful launch,
      * false if the rocket has crashed
      */
     @Override
     public boolean launch() {
-        // TODO implement the method
-        return super.launch();
+        double explosionChance = (5.0/100) * ((double) this.getWeight() / (double) this.getMaxWeight());
+        if (new Random().nextDouble() <= explosionChance)
+            return false;
+        return true;
     }
 
     /**
      * A method that lands the rocket with its cargo on
      * the destination.
      *
+     * Chance of landing crash = 1% * (cargo carried / cargo limit)
+     *
      * @return true on a successful landing,
      * false if the rocket has crashed.
      */
     @Override
     public boolean land() {
-        // TODO implement the method
-        return super.land();
+        double explosionChance = (1.0/100) * ((double) this.getWeight() / (double) this.getMaxWeight());
+        if (new Random().nextDouble() <= explosionChance)
+            return false;
+        return true;
     }
 }

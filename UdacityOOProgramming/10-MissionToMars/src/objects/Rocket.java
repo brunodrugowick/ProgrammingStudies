@@ -9,27 +9,43 @@ import java.util.ArrayList;
  */
 public class Rocket implements SpaceShip {
 
+    private int cost;
     private int weight;
-    private int max_weight;
-    public ArrayList<Item> items;
+    private int maxWeight;
+    private ArrayList<Item> items;
+
+    public Rocket(int weight, int maxWeight, int cost) {
+        this.weight = weight;
+        this.maxWeight = maxWeight;
+        this.items = new ArrayList<>();
+        this.cost = cost;
+    }
 
     public int getCost() {
         return cost;
     }
 
-    private int cost;
+    public int getWeight() {
+        return weight;
+    }
 
-    public Rocket(int weight, int max_weight, int cost) {
+    public int getMaxWeight() {
+        return maxWeight;
+    }
+
+    public ArrayList<Item> getItems() {
+        return items;
+    }
+
+    public void setWeight(int weight) {
         this.weight = weight;
-        this.max_weight = max_weight;
-        this.items = new ArrayList<>();
-        this.cost = cost;
     }
 
     /**
      * A method that launches the rocket with its cargo.
-     * Given the cargo and a probability, the rocket may
-     * crash.
+     * Originally it should return true and be implemented
+     * on the subclasses, but I thought it would be cooler
+     * to randomly return true|false.
      *
      * @return true on a successful launch,
      * false if the rocket has crashed
@@ -40,8 +56,10 @@ public class Rocket implements SpaceShip {
     }
 
     /**
-     * A method that lands the rocket with its cargo on
-     * the destination.
+     * A method that launches the rocket with its cargo.
+     * Originally it should return true and be implemented
+     * on the subclasses, but I thought it would be cooler
+     * to randomly return true|false.
      *
      * @return true on a successful landing,
      * false if the rocket has crashed.
@@ -62,7 +80,7 @@ public class Rocket implements SpaceShip {
      */
     @Override
     public boolean canCarry(Item item) {
-        if (this.weight + item.getWeight() <= this.max_weight)
+        if (this.getWeight() + item.getWeight() <= this.getMaxWeight())
             return true;
         return false;
     }
@@ -74,17 +92,21 @@ public class Rocket implements SpaceShip {
      * @param item The item to be loaded on the Spaceship.
      */
     @Override
-    public void carry(Item item) {
-        this.weight += item.getWeight();
+    public boolean carry(Item item) {
+        if(!canCarry(item))
+            return false;
+        this.setWeight(this.getWeight() + item.getWeight());
         this.items.add(item);
+        return true;
     }
 
     @Override
     public String toString() {
         StringBuilder specs = new StringBuilder();
-        specs.append("Max weight: " + this.max_weight);
-        specs.append(" Current weight: " + this.weight);
-        specs.append(" Items: " + this.items);
+        specs.append("Cost: " + this.getCost());
+        specs.append(" Max weight: " + this.getMaxWeight());
+        specs.append(" Current weight: " + this.getWeight());
+        specs.append(" Items: " + this.getItems());
 
         return specs.toString();
     }
