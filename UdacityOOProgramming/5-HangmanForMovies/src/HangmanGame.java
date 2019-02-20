@@ -1,5 +1,3 @@
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Scanner;
 
 public class HangmanGame {
@@ -27,7 +25,7 @@ public class HangmanGame {
     private int mistakes;
     private boolean victory;
 
-    public HangmanGame(@NotNull String secretValue) {
+    public HangmanGame(String secretValue) {
         this.secretValue = secretValue;
         this.secretValueMask = new String[secretValue.length()];
         for (int i = 0; i < secretValue.length(); i++) {

@@ -13,7 +13,7 @@ public class MoviesList {
 
     public MoviesList() throws FileNotFoundException {
         // Read file
-        this.file = new File("files/movieList.txt");
+        this.file = new File("../files/movieList.txt");
         setNumberOfMovies();
         getMoviesListFromFile();
     }
