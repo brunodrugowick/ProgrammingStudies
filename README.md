@@ -1,4 +1,4 @@
-# 2019EducationManagement
+# Programming Studies
 
 This is a repository to manage my studies on the **year of 2019**. The main objective here is to pump it up ([don't you know?](https://www.youtube.com/watch?v=0HtyF0jux2Q)) my development skills.
 
