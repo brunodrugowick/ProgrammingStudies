@@ -13,11 +13,14 @@ This is a repository to manage my studies on the **year of 2019**. The main obje
 
 ## Main Capabilities
 
-According to **myself**, **I** should/want be::
+According to **myself**, **I** should/want (be)::
 * Well versed on a solid programming language: Java.
 * Versed/aware of the most common frameworks in 2019.
   * [Spring Framework](https://www.udemy.com/spring-framework-5-beginner-to-guru/learn/v4/overview).
+  * AngularJS (?).
+  * React (?)
 * Well versed on OO [Design Patterns](https://www.amazon.com.br/dp/0201633612/ref=pe_2740240_232748480_TE_item)
+* To fully understand dependy management tools.
 * Aware of the importance of the following soft skills:
   * Team Work
   * Empathy
