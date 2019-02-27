@@ -18,12 +18,7 @@ public class Publisher {
     private String addressState;
     private String addressPostalCode;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public Publisher() {
     }
 
     public Publisher(String name, String addressLine1, String addressNeighborhood, String addressCity, String addressState, String addressPostalCode) {
@@ -43,6 +38,14 @@ public class Publisher {
         this.addressCity = addressCity;
         this.addressState = addressState;
         this.addressPostalCode = addressPostalCode;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
