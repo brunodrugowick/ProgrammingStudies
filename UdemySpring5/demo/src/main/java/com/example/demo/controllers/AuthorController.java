@@ -20,4 +20,6 @@ public class AuthorController {
 
         return "authors";
     }
+
+    //TODO how to create an endpoint not tied to a view?
 }
