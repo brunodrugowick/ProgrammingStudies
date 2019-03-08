@@ -12,6 +12,12 @@ This is a repository to manage my studies on the **year of 2019**. The main obje
 | April 2019    | [Design Patterns](https://www.amazon.com.br/dp/0201633612/ref=pe_2740240_232748480_TE_item) |
 | TBD           | Spring has a set of tutorials I maybe read. |
 
+## Other Stuff
+| Type | Description | Link |
+| ---- | ----------- | ---- |
+| Podcast (pt_BR) | A conversation about Object Oriented Programming | https://hipsters.tech/praticas-de-orientacao-a-objetos-hipsters-129/ |
+| Text (en_US) | Composition over inheritance | https://en.wikipedia.org/wiki/Composition_over_inheritance |
+
 ## Main Capabilities
 
 According to **myself**, **I** should/want (be)::
