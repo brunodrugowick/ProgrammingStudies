@@ -8,9 +8,9 @@ This is a repository to manage my studies on the **year of 2019**. The main obje
 | ------------- | --------- |
 | February 2019 | Course [Object Oriented Programming in Java](https://www.udacity.com/course/object-oriented-programming-in-java--ud283) |
 | March 2019    | Course [Spring Framework 5 - Beginner to Guru](https://www.udemy.com/spring-framework-5-beginner-to-guru/learn/v4/overview) |
-| March 2019    | GraphQL |
 | April 2019    | [Design Patterns](https://www.amazon.com.br/dp/0201633612/ref=pe_2740240_232748480_TE_item) |
 | TBD           | Spring has a set of tutorials I maybe read. |
+| TBD           | GraphQL. |
 
 ## Other Stuff
 | Type | Description | Link |
