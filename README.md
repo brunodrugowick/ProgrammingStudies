@@ -4,22 +4,23 @@ This is a repository to manage my studies on the **year of 2019**. The main obje
 
 ## Main Schedule
 
-| Month         | Objective |
-| ------------- | --------- |
-| February 2019 | Course [Object Oriented Programming in Java](https://www.udacity.com/course/object-oriented-programming-in-java--ud283) |
-| March-April 2019    | Course [Spring Framework 5 - Beginner to Guru](https://www.udemy.com/spring-framework-5-beginner-to-guru/learn/v4/overview) |
-| March 2019    | [Tutorial](https://angular.io/tutorial) Angular (official Tour of the Heroes tutorial) |
-| April 2019    | [Design Patterns](https://www.amazon.com.br/dp/0201633612/ref=pe_2740240_232748480_TE_item) |
-| TBD           | Spring has a set of tutorials I maybe read. |
-| TBD           | GraphQL. |
-| TBD           | I cave! Javascript (Typescript) and NodeJS |
+| Month            | Objective |
+| ---------------- | --------- |
+| February 2019    | Course [Object Oriented Programming in Java](https://www.udacity.com/course/object-oriented-programming-in-java--ud283) |
+| March-April 2019 | Course [Spring Framework 5 - Beginner to Guru](https://www.udemy.com/spring-framework-5-beginner-to-guru/learn/v4/overview) |
+| March 2019       | [Tutorial](https://angular.io/tutorial) Angular (official Tour of the Heroes tutorial) |
+| April-May 2019   | [Design Patterns](https://www.amazon.com.br/dp/0201633612/ref=pe_2740240_232748480_TE_item) |
+| April-May 2019   | Quick [Spring Guides](https://spring.io/guides) that are interesting (among others): <br> - https://spring.io/guides/tutorials/rest/ <br> - https://spring.io/guides/tutorials/spring-security-and-angular-js/ <br> - https://spring.io/guides/gs/maven/ <br> - https://spring.io/guides/gs/relational-data-access/ <br> - https://spring.io/guides/gs/securing-web/ <br> - https://spring.io/guides/gs/spring-boot/ <br> - https://spring.io/guides/gs/accessing-data-rest/ |
+| TBD              | GraphQL. |
+| TBD              | I cave! Javascript (Typescript) and NodeJS |
 
 ## Other Stuff
 | Type | Description | Link |
 | ---- | ----------- | ---- |
 | Podcast (pt_BR) | A conversation about Object Oriented Programming | https://hipsters.tech/praticas-de-orientacao-a-objetos-hipsters-129/ |
-| Text (en_US) | SOLID Principles article at springframeworkguru.com | Gotta find |
+| Text (en_US) | SOLID Principles article at springframeworkguru.com | https://springframework.guru/principles-of-object-oriented-design/ |
 | Text (en_US) | Composition over inheritance | https://en.wikipedia.org/wiki/Composition_over_inheritance |
+
 
 ## Main Capabilities
 
@@ -54,7 +55,16 @@ According to **myself**, **I** should/want (be)::
 * Read [Design Patterns](https://www.amazon.com.br/dp/0201633612/ref=pe_2740240_232748480_TE_item).
 
 ### Spring Tutorials (TBD)
-The following was taken from a HELP.md file created when running the basic Spring Boot application developed at the start of the Spring Framework course.
+
+* https://spring.io/guides/tutorials/rest/ 
+* https://spring.io/guides/tutorials/spring-security-and-angular-js/ 
+* https://spring.io/guides/gs/maven/ 
+* https://spring.io/guides/gs/relational-data-access/ 
+* https://spring.io/guides/gs/securing-web/ 
+* https://spring.io/guides/gs/spring-boot/ 
+* https://spring.io/guides/gs/accessing-data-rest/
+
+The following was taken from a HELP.md file created when running the basic Spring Boot application developed at the start of the Spring Framework course. I'll consider which ones to do later.
 
 ```
 # Getting Started
