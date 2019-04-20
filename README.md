@@ -11,6 +11,7 @@ This is a repository to manage my studies on the **year of 2019**. The main obje
 | March 2019       | [Tutorial](https://angular.io/tutorial) Angular (official Tour of the Heroes tutorial) |
 | April-May 2019   | [Design Patterns](https://www.amazon.com.br/dp/0201633612/ref=pe_2740240_232748480_TE_item) |
 | April-May 2019   | Quick [Spring Guides](https://spring.io/guides) that are interesting (among others): <br> - https://spring.io/guides/tutorials/rest/ <br> - https://spring.io/guides/tutorials/spring-security-and-angular-js/ <br> - https://spring.io/guides/gs/maven/ <br> - https://spring.io/guides/gs/relational-data-access/ <br> - https://spring.io/guides/gs/securing-web/ <br> - https://spring.io/guides/gs/spring-boot/ <br> - https://spring.io/guides/gs/accessing-data-rest/ |
+| May 2019- ∞    | [Hacker Rank Data Structures Challenges](https://www.hackerrank.com/domains/data-structures) |
 | TBD              | GraphQL. |
 | TBD              | I cave! Javascript (Typescript) and NodeJS |
 
