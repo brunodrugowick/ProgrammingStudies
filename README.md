@@ -13,6 +13,7 @@ This is a repository to manage my studies on the **year of 2019**. The main obje
 | June-July 2019   | [Design Patterns](https://www.amazon.com.br/dp/0201633612/ref=pe_2740240_232748480_TE_item) |
 | ? 2019           | Quick [Spring Guides](https://spring.io/guides) that are interesting (among others): <br> - https://spring.io/guides/tutorials/rest/ <br> - https://spring.io/guides/tutorials/spring-security-and-angular-js/ <br> - https://spring.io/guides/gs/maven/ <br> - https://spring.io/guides/gs/relational-data-access/ <br> - https://spring.io/guides/gs/securing-web/ <br> - https://spring.io/guides/gs/spring-boot/ <br> - https://spring.io/guides/gs/accessing-data-rest/ |
 | June 2019        | Quick Start on NodeJS, React and React Native based on promotional videos from https://rocketseat.com.br/ |
+| November 2019 - March 2020 | Course [Spring REST Specialist](https://cafe.algaworks.com/lista-espera-spring-rest/) from Algaworks. |
 | TBD              | GraphQL. |
 | TBD              | I cave! Javascript (Typescript) and NodeJS |
 
